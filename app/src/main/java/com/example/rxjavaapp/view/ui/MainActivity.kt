@@ -41,7 +41,8 @@ class MainActivity : AppCompatActivity() {
      * Initialize a list to save the retrieved data from rest api
      */
     private lateinit var postsList: List<PostModel>
-
+    private val filteredlist = ArrayList<PostModel>()
+    private val clearList = ArrayList<PostModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -152,8 +153,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun filter(text: String) {
 
-        val filteredlist = ArrayList<PostModel>()
-        val clearList = ArrayList<PostModel>()
+
 
 
         for (post in postsList) {
