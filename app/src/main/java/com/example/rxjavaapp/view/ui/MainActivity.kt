@@ -154,7 +154,7 @@ class MainActivity : AppCompatActivity() {
     private fun filter(text: String) {
 
 
-
+        filteredlist.clear()
 
         for (post in postsList) {
             // Compare post title with the entered text
